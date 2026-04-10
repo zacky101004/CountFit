@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* SOFT PASTEL PREMIUM THEME (Inspired by Dribbble Reference) */
+  --bg-color: #EBF0F4; /* Soft grayish-blue */
+  --surface-color: #FFFFFF;
+  --surface-hover: #F7FAFC;
+  --border-color: rgba(0, 0, 0, 0.04);
+  
+  --text-primary: #1A202C; /* Very dark charcoal for thick contrast */
+  --text-secondary: #718096;
+  --text-muted: #A0AEC0;
+  
+  --primary-accent: #FF9671; /* Pastel Orange */
+  --primary-hover: #FF8557;
+  
+  --success-color: #A3E4D7; /* Pastel Green */
+  --warning-color: #F8C471;
+  --danger-color: #F1948A;
+
+  --nav-active-bg: #E3F2FD; /* Soft cyan for active state */
+  --nav-active-text: #2E86C1;
+
+  --glass-bg: #FFFFFF;
+  --glass-card-bg: #FFFFFF;
+  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+  --btn-shadow: 0 8px 24px rgba(255, 150, 113, 0.3);
+  
+  --counter-bg: #1E2329; /* Dark Charcoal from reference */
+  --counter-border: transparent;
+  --counter-shadow: 0 16px 32px rgba(30, 35, 41, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+body {
+  font-family: 'Outfit', sans-serif; /* Changed to Outfit for softer, modern rounded feel */
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base Cards */
+.glass-panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 36px;
+  box-shadow: var(--glass-shadow);
+  transition: all 0.3s ease;
+}
+
+.glass-card {
+  background: var(--glass-card-bg);
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 { 
+  font-weight: 800; 
+  letter-spacing: -0.04em; 
+  margin-bottom: 0.5rem; 
+  color: var(--text-primary);
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+p, span, div { 
+  font-weight: 500; 
+  color: var(--text-secondary); 
+  line-height: 1.6; 
+}
+
+.text-gradient {
+  color: var(--text-primary); /* Removed gradient, solid looks much cleaner */
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.btn-primary { 
+  background-color: var(--primary-accent); 
+  color: #ffffff; 
+  box-shadow: var(--btn-shadow); 
+}
+.btn-primary:hover { 
+  background-color: var(--primary-hover); 
+  transform: translateY(-2px); 
+  box-shadow: 0 12px 28px rgba(255, 150, 113, 0.4); 
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-secondary { 
+  background-color: #FFFFFF; 
+  color: var(--text-primary); 
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+.btn-secondary:hover { 
+  background-color: #F8FAFC; 
+}
+
+.btn-danger { 
+  background-color: #FFF0F0; 
+  color: #E53E3E; 
+}
+.btn-danger:hover { 
+  background-color: #FFE4E4; 
+}
+
+/* Core Layout */
+#root { 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100dvh; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 1.5rem; 
+  width: 100%; 
+}
+.app-container { 
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  position: relative; 
+  padding-bottom: 100px; 
+}
+
+/* Inputs */
+input, select {
+  background-color: #F7FAFC;
+  border: 2px solid transparent;
+  color: var(--text-primary);
+  padding: 1rem 1.25rem;
+  border-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  outline: none;
+}
+input:focus, select:focus { 
+  background-color: #FFFFFF;
+  border-color: var(--primary-accent); 
+  box-shadow: 0 0 0 4px rgba(255, 150, 113, 0.15);
+}
+
+/* Anim */
+@keyframes pop-in { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes slide-up { 0% { transform: translateY(20px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+.animate-pop { animation: pop-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+.animate-slide { animation: slide-up 0.3s ease forwards; }
