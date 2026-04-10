@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/zacky101004/CountFit/master/public/vite.svg" alt="CountFit Logo" width="100"/>
   <h1>⚡ CountFit</h1>
-  <p><strong>A Modern, Neomorphic Fitness Tracker & Repetition Counter</strong></p>
+  <p><strong>Aplikasi Pelacak Kebugaran & Penghitung Repetisi Modern (Neomorphic)</strong></p>
 
   <p>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
@@ -12,67 +12,67 @@
 
 <br/>
 
-## 🎯 What is CountFit?
-**CountFit** is a premium, client-side fitness tracking application designed to help you count repetitions, track workout durations, and monitor your consistency. Built with a stunning **Soft Pastel (Neomorphism) UI**, it ditches the boring standard interfaces for an app that feels like a premium iOS experience right in your browser.
+## 🎯 Apa itu CountFit?
+**CountFit** adalah aplikasi pelacak kebugaran sisi-klien (*client-side*) premium yang dirancang untuk membantu Anda menghitung repetisi olahraga, memantau durasi latihan, dan melacak konsistensi harian Anda. Dibangun dengan antarmuka **Soft Pastel (Neomorphism) UI**, aplikasi ini sangat modern dan terasa seperti menggunakan aplikasi iOS premium tepat di dalam browser Anda.
 
-Perfect for keeping track of your daily Push-ups, Sit-ups, Squats, Planks, and Custom workouts!
-
----
-
-## ✨ Features
-- 🧼 **Beautiful Neomorphic UI**: Designed with an ultra-clean, modern pastel aesthetic. Large, satisfying tap areas and thick typography.
-- 🔥 **Gamified Streak System**: Automatically detects your consistency and rewards you with daily streaks.
-- 🔢 **Massive Rep Counter**: A giant, satisfying tap-to-count button with haptic feedback (vibration) for mobile users.
-- ⏱️ **Timer Mode**: Swaps dynamically to a Stopwatch/Countdown interface when selecting non-repetition workouts like 'Plank' or 'Lari'.
-- 📊 **Statistics & Charts**: Visualizes your last 7 days of workout data using beautiful Bar Charts built with `Chart.js`.
-- 💾 **Local Storage Persistence**: 100% private and serverless. All your history is saved securely directly inside your browser.
+Sangat cocok untuk menghitung secara spesifik kegiatan nge-gym Anda seperti *Push-up*, *Sit-up*, *Squat*, *Plank*, hingga Lari!
 
 ---
 
-## 📸 Sneak Peek
-*(You can add your amazing UI screenshots here!)*
-> Example: Place a screenshot of your beautiful orange & mint UI in the `/public` folder and link it here.
+## ✨ Fitur Utama
+- 🧼 **UI Neomorphic yang Estetik**: Dirancang dengan desain pastel modern yang bersih. Mempunyai bidang sentuh teks ekstra tebal.
+- 🔥 **Sistem Streak**: Mendeteksi konsistensi Anda secara otomatis dan memberikan "Api harian" tiap kali log latihan terisi di hari berturut-turut.
+- 🔢 **Penghitung Raksasa (Tap-to-Count)**: Tombol interaktif dinamis yang sangat asik untuk disentuh dengan respons *haptic/getar* penuh saat digunakan di HP.
+- ⏱️ **Mode Timer Otomatis**: Layar langsung berganti dari Penghitung Angka menjadi Stopwatch/Hitung Mundur otomatis bila Anda memilih mode olahraga tak berbatas repetisi (Plank / Lari).
+- 📊 **Statistik & Visualisasi Grafik**: Menyediakan kalkulator bar-chart warna-warni `Chart.js` yang melihat seberapa besar target repetisi Anda dihabiskan 7 hari kebelakang.
+- 💾 **Local Storage Persistence**: 100% aman dan beroperasi luring (*offline/serverless*). Riwayat akan tercatat sempurna di database HP/Browser Anda sendiri.
 
 ---
 
-## 🚀 Getting Started
+## 📸 Tampilan Aplikasi
+*(Silahkan masukkan screenshot keren aplikasi Anda di sini!)*
+> Contoh: Masukkan gambar UI orange/mint Anda ke `/public` folder lalu hubungkan link gambar tersebut kesini.
 
-To get a local copy up and running, follow these simple steps.
+---
 
-### Prerequisites
-Make sure you have Node.js installed on your computer.
+## 🚀 Cara Menjalankan
 
-### Installation & Run
+Untuk menjankan server ini secara lokal, ikuti langkah-langkah simpel berikut ini:
 
-1. **Clone the repo**
+### Prasyarat
+Pastikan `Node.js` terbaru sudah ter-install di komputer/laptop Anda.
+
+### Instalasi & Menyalakan
+
+1. **Clone repo ini**
    ```sh
    git clone https://github.com/zacky101004/CountFit.git
    ```
-2. **Navigate into the directory**
+2. **Masuk ke folder**
    ```sh
    cd CountFit
    ```
-3. **Install NPM packages**
+3. **Install Package/Library**
    ```sh
    npm install
    ```
-4. **Start the Development Server**
+4. **Mulai mode Development**
    ```sh
    npm run dev
    ```
-5. Open up `http://localhost:5173` in your browser and start tracking! 💪
+5. Buka link `http://localhost:5173` di browser Anda lalu mulai berolahraga! 💪
 
 ---
 
-## 🛠️ Built With
-- **[React.js](https://reactjs.org/)** - Core frontend framework
-- **[Vite](https://vitejs.dev/)** - Lightning fast build tool
-- **[Lucide React](https://lucide.dev/)** - Beautiful, consistent iconography
-- **[Chart.js](https://www.chartjs.org/)** - For dynamic statistics rendering
+## 🛠️ Dibangun Menggunakan
+- **[React.js](https://reactjs.org/)** - Framework Frontend terpopuler
+- **[Vite](https://vitejs.dev/)** - Tool performa build super kencang
+- **[Lucide React](https://lucide.dev/)** - Icon rapi dan estetis
+- **[Chart.js](https://www.chartjs.org/)** - Visualisasi diagram keren dan mulus
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Kreator
 Built with ❤️ by **[Zacky](https://github.com/zacky101004)**.
 
-*If you like this project, don't forget to leave a ⭐ on the repository!*
+*Bila website ini asik, jangan lupa kirim ⭐ (bintang) ke repository ini yah!*
